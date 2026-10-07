@@ -1,3 +1,5 @@
+import FAQSection from "./components/FAQSection";
+import Footer from "./components/Footer";
 import Header from "./components/header/Header";
 import ProductGrid from "./components/products/ProductsGrid";
 import Sidebar from "./components/Sidebar";
@@ -14,24 +16,27 @@ function App() {
 
             {/* MAIN PRODUCT GRID SECTION */}
             <main className="flex-1">
-              {/* Header / Banner Section */}
               <header className="w-full bg-purple-700 text-white p-6 text-center">
                 <h1 className="text-2xl font-bold">Gaming Consoles Banner</h1>
               </header>
 
-              {/* 
-        CRITICAL PARENT LAYER: 
-        This row bounds the sticky sidebar. Once this div ends, the sidebar un-sticks.
-      */}
               <h2 className="text-xl font-bold mb-4">Gaming Gadgets On Rent</h2>
 
               <ProductGrid />
             </main>
           </div>
 
-          {/* FOOTER SECTION: The sidebar will NOT scroll into this zone */}
-          <footer className="w-full bg-gray-800 text-gray-400 p-12 text-center mt-auto">
-            <p>Footer Content — Sidebar un-sticks before this area starts.</p>
+          {/* FAQ Section */}
+          <section className="container w-full h-full mx-auto py-10 p-4">
+            <div className="flex flex-col items-start bg-white rounded-3xl py-10 px-6">
+              <p className="font-bold text-sm md:text-xl text-black">
+                Frequently Asked Questions (FAQs)
+              </p>
+              <FAQSection />
+            </div>
+          </section>
+          <footer className="w-full bg-[#030d31] text-gray-400 p-12 text-center mt-auto">
+            <Footer />
           </footer>
         </div>
       </main>
