@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import DateIconLight from "../assets/icons/Date";
 
-const FloatingSelectDateButton = () => {
+const FloatingSelectDateButton = ({ onClick }) => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -21,6 +21,7 @@ const FloatingSelectDateButton = () => {
   return (
     <button
       type="button"
+      onClick={onClick}
       className="
         fixed
         bottom-6

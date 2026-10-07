@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
+
 import FAQSection from "./components/FAQSection";
+import RentalDateModal from "./components/RentalDateModal";
 import FloatingSelectDateButton from "./components/FloatingSelectDateButton";
 import Footer from "./components/Footer";
 import Header from "./components/header/Header";
@@ -6,6 +9,18 @@ import ProductGrid from "./components/products/ProductsGrid";
 import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [isRentalModalOpen, setIsRentalModalOpen] = useState(false);
+
+  useEffect(() => {
+    const hasSeenModal = localStorage.getItem("rental-modal-seen");
+
+    if (!hasSeenModal) {
+      setIsRentalModalOpen(true);
+
+      localStorage.setItem("rental-modal-seen", "true");
+    }
+  }, []);
+
   return (
     <div>
       <Header />
@@ -41,7 +56,11 @@ function App() {
           </footer>
         </div>
       </main>
-      <FloatingSelectDateButton />
+      <FloatingSelectDateButton onClick={() => setIsRentalModalOpen(true)} />
+      <RentalDateModal
+        isOpen={isRentalModalOpen}
+        onClose={() => setIsRentalModalOpen(false)}
+      />
     </div>
   );
 }

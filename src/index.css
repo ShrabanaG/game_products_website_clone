@@ -18,3 +18,13 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.rental-calendar .rdp-months {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.rental-calendar .rdp-month {
+  flex: 1;
+}
