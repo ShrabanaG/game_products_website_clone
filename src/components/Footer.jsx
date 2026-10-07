@@ -140,7 +140,7 @@ const Footer = () => {
       <div className="w-full h-0.5 bg-[#758fe5] mx-4 mt-10 mb-4" />
       <div className="w-full text-[#758fe5] flex items-start justify-between">
         <button
-          className="flex flex-row gap-2"
+          className="flex flex-row gap-2 cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <span className="text-sm font-bold">Go Up</span>

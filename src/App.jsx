@@ -1,4 +1,5 @@
 import FAQSection from "./components/FAQSection";
+import FloatingSelectDateButton from "./components/FloatingSelectDateButton";
 import Footer from "./components/Footer";
 import Header from "./components/header/Header";
 import ProductGrid from "./components/products/ProductsGrid";
@@ -40,6 +41,7 @@ function App() {
           </footer>
         </div>
       </main>
+      <FloatingSelectDateButton />
     </div>
   );
 }
