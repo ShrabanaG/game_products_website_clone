@@ -7,3 +7,5 @@ export { default as XboxConsoleImage } from "./images/XBoxConsoleImage.webp";
 export { default as ProjectorImage } from "./images/ProjectorImage.webp";
 export { default as Banner1 } from "./images/Banner1.webp";
 export { default as Banner2 } from "./images/Banner2.webp";
+export { default as GamingBannerLeft } from "./images/gaming-left.webp";
+export { default as GamingBannerRight } from "./images/gaming-right.webp";
