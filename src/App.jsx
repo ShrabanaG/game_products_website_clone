@@ -1,4 +1,5 @@
 import Header from "./components/header/Header";
+import ProductGrid from "./components/products/ProductsGrid";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -24,22 +25,7 @@ function App() {
       */}
               <h2 className="text-xl font-bold mb-4">Gaming Gadgets On Rent</h2>
 
-              {/* Simulated long grid of product cards */}
-              <div className="grid grid-cols-1 md-grid-cols-2 lg:grid-cols-3 gap-4">
-                {[...Array(12)].map((_, index) => (
-                  <div
-                    key={index}
-                    className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm h-64"
-                  >
-                    <span className="text-xs font-semibold px-2 py-0.5 rounded bg-orange-100 text-orange-600">
-                      Trending
-                    </span>
-                    <div className="h-40 bg-gray-100 mt-2 rounded flex items-center justify-center">
-                      Product Image {index + 1}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <ProductGrid />
             </main>
           </div>
 

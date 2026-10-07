@@ -29,7 +29,7 @@ const categories = {
 
 const CategoryNavbar = () => {
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-[#f7f8fa] h-15">
+    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-[#f7f8fa] h-15 shadow-2xl">
       <div className="mx-auto hidden px-8 items-center justify-center h-15 md:flex">
         {Object.entries(categories).map(([category, items]) => (
           <div key={category} className="group relative h-full">

@@ -5,3 +5,5 @@ export { default as RacingWheelImage } from "./images/racingwheelimage.webp";
 export { default as VRImage } from "./images/VRImage.webp";
 export { default as XboxConsoleImage } from "./images/XBoxConsoleImage.webp";
 export { default as ProjectorImage } from "./images/ProjectorImage.webp";
+export { default as Banner1 } from "./images/Banner1.webp";
+export { default as Banner2 } from "./images/Banner2.webp";

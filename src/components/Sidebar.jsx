@@ -51,7 +51,7 @@ const sidebarContent = [
 const Sidebar = () => {
   return (
     <aside
-      className="sticky top-4 w-28 bg-white border border-gray-200 rounded-2xl shadow-sm p-3 
+      className="sticky top-20 w-28 bg-white border border-gray-200 rounded-2xl shadow-sm p-3 
                  flex flex-col items-center gap-6 
                  max-h-[calc(75vh-2rem)] overflow-y-auto overscroll-contain scrollbar-none"
     >
